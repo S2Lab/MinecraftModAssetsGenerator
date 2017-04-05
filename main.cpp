@@ -80,7 +80,7 @@ void show_author()
 	cout << "\t\t\t否则极为容易由于信仰力不足生成各种乱码（大雾）" << endl;
 	cout << "\t\t\t\t\t\t\t\t\t”" << endl;
 	cout << endl;
-	system("pause");
+	cout << endl;
 }
 
 void main()
