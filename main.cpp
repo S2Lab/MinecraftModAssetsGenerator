@@ -55,6 +55,32 @@ void show_help()
     cout<<endl;
     cout<<"在数据类型前加\"delete\""<<endl;
     cout<<"如\"deleteitem\"即可删除相应数据"<<endl;
+    cout<<endl;
+    cout<<"示例数据文件:"<<endl;
+    cout<<"redstonepower"<<endl;
+    cout<<"bucket bucket_restone"<<endl;
+    cout<<"tool axe_redstone"<<endl;
+    cout<<"block block_chargedRedstone"<<endl;
+    cout<<"item item_chargedRedstone"<<endl;
+    cout<<"deleteblock block_redstone"<<endl;
+    cout<<endl;
+    cout<<endl;
+}
+
+void show_author()
+{
+    system("cls");
+    cout<<"作者:"<<endl;
+    cout<<"\tFirok"<<endl;
+    cout<<endl;
+    cout<<"Github:"<<endl;
+    cout<<"https://github.com/S2Lab/MinecraftModAssetsGenerator"<<endl;
+    cout<<endl;
+    cout<<"\t\t“"<<endl;
+    cout<<"\t\t\t使用之前请务必在心里默念3次 μ's Forever"<<endl;
+    cout<<"\t\t\t否则极为容易由于信仰力不足生成各种乱码（大雾）"<<endl;
+    cout<<endl;
+    system("pause");
 }
 
 void main()
@@ -71,7 +97,8 @@ void main()
 		system("cls");
         cout<<"1.生成数据"<<endl;
         cout<<"2.帮助"<<endl;
-        cout<<"3.退出"<<endl;
+        cout<<"3.关于"<<endl;
+        cout<<"4.退出"<<endl;
         flag_temp=_getch();
 		ifstream ifs_config;
         switch(flag_temp)
@@ -213,6 +240,10 @@ void main()
             break;
 
             case '3':
+            show_author();
+            break;
+
+            case '4':
             flag_main=false;
             break;
 
