@@ -216,6 +216,9 @@ void main()
 						ofstream ofs_output4(path_output, ofstream::out);
 						ofs_output4 << "{\n\t\"parent\": \"builtin/generated\",\n\t\"textures\": {\n\t\t\"layer0\": \""<<name_mod<<":items/bucket_"<<name_item<<"\"\n\t},\n\t\"display\": {\n\t\t\"thirdperson\": {\n\t\t\t\"rotation\": [ -90, 0, 0 ],\n\t\t\t\"translation\": [ 0, 1, -3 ],\n\t\t\t\"scale\": [ 0.55, 0.55, 0.55 ]\n\t\t},\n\t\t\"firstperson\": {\n\t\t\t\"rotation\": [ 0, -135, 25 ],\n\t\t\t\"translation\": [ 0, 4, 2 ],\n\t\t\t\"scale\": [ 1.7, 1.7, 1.7 ]\n\t\t}\n\t}\n}";
 						
+						path_output = ".\\assets\\" + name_mod + "\\textures\\items\\bucket_" + name_item + ".png";
+						system(_cmd("copy " + path_img + " " + path_output));
+
 						path_output = ".\\assets\\" + name_mod + "\\textures\\fluid\\" + name_item + "_still.png";
 						system(_cmd("copy " + path_img + " " + path_output));
 
